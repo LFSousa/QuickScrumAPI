@@ -1,9 +1,0 @@
-{
-  "projects": [
-    {
-      "id": "proj_id",
-      "name": "Project",
-      "description": "This is a project"
-    }
-  ]
-}
