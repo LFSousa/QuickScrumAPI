@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/LFSousa/QuickScrumAPI#readme",
   "dependencies": {
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
     "lowdb": "^1.0.0"
   }
 }
