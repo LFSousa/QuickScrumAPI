@@ -1,3 +1,4 @@
 module.exports = {
-    'get_projets': "/projects"
+    'get_projects': "/projects",
+    'add_project': "/project"
 }

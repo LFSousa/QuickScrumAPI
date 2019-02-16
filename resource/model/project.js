@@ -1,4 +1,4 @@
-import { ObjectModel } from "objectmodel"
+const { ObjectModel } = require("objectmodel");
 
 module.exports = new ObjectModel({
     "id": String,
