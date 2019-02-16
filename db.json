@@ -1,9 +1,9 @@
 {
   "projects": [
     {
-      "id": "",
-      "name": "",
-      "description": ""
+      "id": "test",
+      "name": "Test",
+      "description": "Test project"
     }
   ]
 }

@@ -3,9 +3,9 @@ const log = require("../../resource/utility/log");
 
 module.exports = app => {
 
+    let projectDAO = app.dao.project;
     app.get(routes.get_projets, (req, res) => {
-        
-        log.info(req);
-        res.json()
+
+        res.json(projectDAO.read());
     })
 }

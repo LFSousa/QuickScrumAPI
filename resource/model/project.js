@@ -1,5 +1,5 @@
 module.exports = {
-    "id": "",
-    "name": "",
-    "description": ""
+    "id": String,
+    "name": String,
+    "description": String
 }
