@@ -1,0 +1,28 @@
+{
+  "name": "quickscrumapi",
+  "version": "1.0.0",
+  "description": "An API for Quick Scrum framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LFSousa/QuickScrumAPI.git"
+  },
+  "keywords": [
+    "scrum",
+    "api",
+    "quick",
+    "framework"
+  ],
+  "author": "Luis Filipe Sousa",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/LFSousa/QuickScrumAPI/issues"
+  },
+  "homepage": "https://github.com/LFSousa/QuickScrumAPI#readme",
+  "dependencies": {
+    "lowdb": "^1.0.0"
+  }
+}
