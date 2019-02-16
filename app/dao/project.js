@@ -22,5 +22,18 @@ module.exports = () => {
         throw new Error(`a project with id ${project.id} already exists`);
     }
 
+    dao.remove = id => {
+
+        if(db.get('projects').find({id: id}).value()){
+
+            db.get('projects')
+            .remove({id: id})
+            .write()
+            return true;
+        }
+
+        throw new Error("project not found")
+    }
+
     return dao;
 }

@@ -4,8 +4,14 @@ module.exports = {
         
         console.log(...args)
     },
+
     'error': (...args) => {
         
         console.log(...args)
+    },
+
+    'debug': (...args) => {
+
+        console.log(...args);
     }
 }
