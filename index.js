@@ -9,7 +9,7 @@ const config = require('./resource/constant/config');
 
 app.use(cors());
 app.use(bodyParser.json());
-consign({'cwd': 'app'}).then('route').into(app);
+consign({'cwd': 'app'}).then('dao').then('route').into(app);
 
 
 http.listen(config.server_port, () => {

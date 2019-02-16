@@ -9,8 +9,4 @@ const db = low(adapter);
 db.defaults(dbModel)
   .write()
 
-function DB() {
-
-}
-
-module.exports = DB;
+module.exports = db;
