@@ -1,4 +1,4 @@
 module.exports = {
-    'dbLocation': "/home/luis/QuickScrumAPI/db.json",
+    'dbLocation': "db.json",
     'server_port': 3000
 }
