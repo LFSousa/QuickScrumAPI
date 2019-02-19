@@ -4,7 +4,7 @@
   "description": "An API for Quick Scrum framework",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "nodemon index.js --ignore db.json"
   },
   "repository": {
     "type": "git",
