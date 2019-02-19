@@ -3,6 +3,7 @@ module.exports = {
     'get_projects': "/projects",
     'add_project': "/project",
     'remove_project': "/project/:id",
+    'edit_project': "/project/:id",
 
     //SPRINTS
     'get_sprints': "/sprints/:project_id",

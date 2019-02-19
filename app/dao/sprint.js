@@ -6,7 +6,7 @@ module.exports = () => {
     
     dao.read = () => {
 
-        return db.get('sprints').value()
+        return db.get('sprints').value();
     }
 
     dao.write = sprint => {
@@ -15,7 +15,7 @@ module.exports = () => {
 
             db.get('sprints')
             .push(sprint)
-            .write()
+            .write();
             return true;
         }
 
@@ -28,11 +28,11 @@ module.exports = () => {
 
             db.get('sprints')
             .remove({id: id})
-            .write()
+            .write();
             return true;
         }
 
-        throw new Error("sprint not found")
+        throw new Error("sprint not found");
     }
 
     return dao;

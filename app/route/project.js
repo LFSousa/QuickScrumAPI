@@ -27,8 +27,29 @@ module.exports = app => {
         try {
             projectDAO.remove(req.params.id);
             res.json();
+            log.info("Project deleted:", req.body.id)
         } catch (e) {
             res.json({error: e.message, file: __filename}).status(404);
+        }
+    })
+
+    app.put(routes.edit_project, (req, res) => {
+
+        try {
+            
+            let project = new Project(req.body);
+            if(project.id == req.params.id){
+
+                projectDAO.put(project);
+                res.json().status(201);
+                log.info("Project updated:", req.body.id)
+            } else {
+
+                res.json({error: "ids isnt the same"}).status(409);
+                return;
+            }
+        } catch (e) {
+            res.json({error: e.message, file: __filename}).status(409);
         }
     })
 

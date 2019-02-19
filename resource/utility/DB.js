@@ -7,6 +7,6 @@ const adapter = new FileSync(config.dbLocation);
 const db = low(adapter);
 
 db.defaults(dbModel)
-  .write()
+  .write();
 
 module.exports = db;

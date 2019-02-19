@@ -19,7 +19,7 @@ module.exports = app => {
 
                 sprintDAO.write(new Sprint(req.body));
                 res.json().status(201);
-                log.info("New sprint inserted:", req.body.id)
+                log.info("New sprint inserted:", req.body.id);
             } else {
                 res.json({error: "project not found"}).status(404);
             }

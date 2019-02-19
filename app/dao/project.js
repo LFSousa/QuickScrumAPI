@@ -6,7 +6,7 @@ module.exports = () => {
     
     dao.read = () => {
 
-        return db.get('projects').value()
+        return db.get('projects').value();
     }
 
     dao.write = project => {
@@ -15,7 +15,7 @@ module.exports = () => {
 
             db.get('projects')
             .push(project)
-            .write()
+            .write();
             return true;
         }
 
@@ -24,7 +24,7 @@ module.exports = () => {
 
     dao.getByID = id => {
         
-        return db.get('projects').find({id: id}).value()
+        return db.get('projects').find({id: id}).value();
     }
 
     dao.remove = id => {
@@ -33,11 +33,25 @@ module.exports = () => {
 
             db.get('projects')
             .remove({id: id})
-            .write()
+            .write();
             return true;
         }
 
-        throw new Error("project not found")
+        throw new Error("project not found");
+    }
+
+    dao.put = project => {
+
+        if(db.get('projects').find({id: project.id}).value()){
+
+            db.get('projects')
+            .find({id: project.id})
+            .assign(project)
+            .write();
+            return true;
+        }
+
+        throw new Error("project not found");
     }
 
     return dao;
