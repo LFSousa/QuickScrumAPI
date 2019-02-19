@@ -33,6 +33,7 @@ module.exports = app => {
         try {
             sprintDAO.remove(req.params.id);
             res.json();
+            log.info("Sprint deleted:", req.body.id)
         } catch (e) {
             res.json({error: e.message, file: __filename}).status(404);
         }
